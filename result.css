@@ -1,0 +1,249 @@
+@font-face {
+  font-family: HankenBold;
+  src: url("./assets/fonts/static/HankenGrotesk-Bold.ttf");
+}
+
+@font-face {
+  font-family: HankenMedium;
+  src: url("./assets/fonts/static/HankenGrotesk-Medium.ttf");
+}
+
+@font-face {
+  font-family: HankenXtraBold;
+  src: url("./assets/fonts/static/HankenGrotesk-ExtraBold.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(0, 0%, 100%);
+
+  font-family: HankenMedium;
+}
+
+p {
+  font-size: 18px;
+}
+
+h3 {
+  font-family: HankenBold;
+}
+.result-columns {
+  display: flex;
+  margin: 20rem auto;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 10%;
+  padding: 3rem 4rem;
+}
+
+.result-card {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%, 1),
+    hsl(241, 81%, 54%, 0.9)
+  );
+  text-align: center;
+  color: hsl(221, 100%, 96%);
+}
+
+.result-card p {
+  max-width: 240px;
+  margin-top: 14px;
+  color: hsl(241, 100%, 89%);
+}
+
+.result-card h3 {
+  margin-top: 15px;
+  font-size: 1.5rem;
+}
+
+.inside-result {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.inside-result span {
+  margin: 15px 0;
+  margin-top: 0;
+  font-size: 1.2rem;
+  color: hsl(241, 100%, 89%);
+}
+
+div.score {
+  background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 100%;
+  padding: 4rem;
+  margin-top: 1.3rem;
+}
+
+div.score h1 {
+  font-family: HankenXtraBold;
+  font-size: 48px;
+}
+
+div.score span {
+  color: hsl(241, 100%, 89%);
+  font-size: 14px;
+}
+
+.stats-card {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  box-shadow: 10px 10px 69px 190px rgba(200, 199, 255, 0.4);
+  -webkit-box-shadow: 50px 2px 100px 52px rgba(200, 199, 255, 0.4);
+  -moz-box-shadow: 10px 10px 69px 5px rgba(200, 199, 255, 0.4);
+}
+
+div.stats div.flex {
+  padding: 14px;
+  margin-bottom: 16px;
+  border-radius: 5px;
+}
+
+div.flex img {
+  margin-right: 6px;
+}
+
+span.hundred {
+  color: hsl(240, 26%, 41%);
+  margin-left: 5px;
+}
+
+span.actual-stat {
+  font-weight: bold;
+  color: hsl(224, 30%, 27%);
+  margin-left: 80px;
+}
+
+div button {
+  border: 0;
+  display: inline-block;
+  margin: 20px auto;
+  font-size: 16px;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-weight: 600;
+  padding: 1.1rem 5.5rem;
+  border-radius: 90px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:active {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%, 1),
+    hsl(241, 81%, 54%, 0.9)
+  );
+}
+
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(252, 100%, 67%, 1),
+    hsl(241, 81%, 54%, 0.9)
+  );
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.flex .aside {
+  margin-left: 18.5px;
+}
+div.stats div p.five {
+  font-weight: 600;
+}
+.reaction {
+  background-color: hsla(0, 100%, 67%, 0.2);
+  color: hsla(0, 100%, 67%);
+}
+
+.memory {
+  background-color: hsla(39, 100%, 56%, 0.2);
+  color: hsla(39, 100%, 56%);
+}
+.verbal {
+  background-color: hsla(166, 100%, 37%, 0.2);
+  color: hsla(166, 100%, 37%);
+}
+
+.visual {
+  background-color: hsla(234, 85%, 45%, 0.2);
+  color: hsla(234, 85%, 45%);
+}
+
+.stats-card h3 {
+  margin-bottom: 39px;
+}
+
+@media screen and (max-width: 768px) {
+  .result-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+  div.score {
+    border-radius: 50%;
+    width: 100px;
+    padding: 1.5rem;
+    align-self: center;
+  }
+
+  .result-card h3 {
+    font-size: 1.1rem;
+    margin-top: 23px;
+  }
+  .result-card p {
+    font-size: 15px;
+  }
+  .stats-card {
+    border-radius: 10%;
+  }
+  div.stats div.flex {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
+  span.hundred {
+    margin-left: 3px;
+  }
+  .stats-card h3 {
+    margin-bottom: 25px;
+  }
+  p,
+  h3 {
+    font-size: 14px;
+  }
+  .card {
+    padding: 1.3rem 1.6rem 1.2rem;
+    box-shadow: none;
+  }
+  div.reaction.flex p.five {
+    margin-right: 9px;
+  }
+
+  div.memory.flex p.five {
+    margin-right: 9px;
+  }
+  div.verbal.flex span.actual-stat {
+    margin-left: 89px;
+  }
+
+  div.visual.flex span.actual-stat {
+    margin-left: 89px;
+  }
+  div button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}

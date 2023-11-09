@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./result.css" />
+
+    <title>Results summary component</title>
+  </head>
+  <body>
+    <div class="result-columns">
+      <div class="result-card card">
+        <div class="inside-result">
+          <span>Your Result</span>
+          <div class="score">
+            <h1>76</h1>
+            <span>of 100</span>
+          </div>
+
+          <h3>Great</h3>
+          <p>
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </div>
+      <div class="stats-card card">
+        <h3>Summary</h3>
+        <div class="stats">
+          <div class="reaction flex">
+            <img alt="icon" src="./assets/images/icon-reaction.svg" />
+            <p class="five">Reaction</p>
+            <span class="actual-stat">80</span>
+            <span class="hundred">/ 100</span>
+          </div>
+
+          <div class="memory flex">
+            <img alt="icon" src="./assets/images/icon-memory.svg" />
+            <p class="five">Memory</p>
+            <span class="actual-stat">92</span>
+            <span class="hundred">/ 100</span>
+          </div>
+
+          <div class="verbal flex">
+            <img alt="icon" src="./assets/images/icon-verbal.svg" />
+            <p class="five">Verbal</p>
+            <div class="aside">
+              <span class="actual-stat">61</span>
+              <span class="hundred">/ 100</span>
+            </div>
+          </div>
+
+          <div class="visual flex">
+            <img alt="icon" src="./assets/images/icon-visual.svg" />
+            <p class="five">Visual</p>
+            <div class="aside">
+              <span class="actual-stat">72</span>
+              <span class="hundred">/ 100</span>
+            </div>
+          </div>
+        </div>
+        <button>Continue</button>
+      </div>
+    </div>
+  </body>
+</html>
